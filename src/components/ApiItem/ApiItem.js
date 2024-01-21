@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import "./apiItem.scss";
 import { BsBookmark, BsBookmarkFill } from 'react-icons/bs'
 import { RiArrowRightSLine } from 'react-icons/ri'
-const index = ({ api, toggleBookmark }) => {
+const ApiItem = ({ api, toggleBookmark }) => {
     return (
         <div className="api-item" key={api.id}>
             <div className="item-icon">
@@ -27,4 +28,4 @@ const index = ({ api, toggleBookmark }) => {
     )
 }
 
-export default index
+export default ApiItem
